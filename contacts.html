@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Летово.Образование</title>
+  <title>Контакты — Летово.Образование</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,7 +11,7 @@
   <!-- HEADER -->
   <header class="header">
     <div class="header__inner">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <svg class="logo__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 4L36 13V27L20 36L4 27V13L20 4Z" stroke="#1a3a6b" stroke-width="2.5" fill="none"/>
           <path d="M20 4L20 36" stroke="#1a3a6b" stroke-width="2"/>
@@ -25,7 +25,7 @@
       </a>
 
       <nav class="nav">
-        <div class="nav__item nav__item--dropdown">
+        <div class="nav__item nav__item--dropdown nav__item--active">
           О нас
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <div class="dropdown">
@@ -33,10 +33,10 @@
             <a href="contacts.html">Контакты</a>
           </div>
         </div>
-        <a href="#" class="nav__item">Статьи</a>
-        <a href="#" class="nav__item">Наш проект</a>
-        <a href="#" class="nav__item">О Летово</a>
-        <a href="#" class="nav__item">Полезные материалы</a>
+        <a href="index.html" class="nav__item">Статьи</a>
+        <a href="index.html" class="nav__item">Наш проект</a>
+        <a href="index.html" class="nav__item">О Летово</a>
+        <a href="index.html" class="nav__item">Полезные материалы</a>
       </nav>
 
       <div class="header__auth" id="authButtons">
@@ -54,20 +54,19 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- CONTACTS PAGE -->
   <main>
-    <section class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title">Летово.Образование</h1>
-        <p class="hero__subtitle">Бесплатная образовательная<br>платформа для учеников 3–8 классов</p>
-      </div>
-      <div class="hero__cta">
-        <p>👋 Начни обучение вместе с нами уже сейчас!</p>
-        <button class="btn btn--primary" id="heroRegisterBtn">Зарегистрироваться</button>
+    <section class="contacts-page">
+      <div class="contacts-page__inner">
+        <h1 class="contacts-page__title">Контакты</h1>
+        <div class="contacts-card">
+          <div class="contacts-row">
+            <span class="contacts-label">Почта</span>
+            <a class="contacts-value" href="mailto:2030smolyaninov.ee@student.letovo.ru">2030smolyaninov.ee@student.letovo.ru</a>
+          </div>
+        </div>
       </div>
     </section>
-
-
   </main>
 
   <!-- FOOTER -->
@@ -90,7 +89,7 @@
         <a href="#">Курсы</a>
         <a href="#">Олимпиады</a>
         <a href="#">Новости</a>
-        <a href="#">Контакты</a>
+        <a href="contacts.html">Контакты</a>
       </div>
       <p class="footer__copy">© 2024 Летово.Образование. Все права защищены.</p>
     </div>

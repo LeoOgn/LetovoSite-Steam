@@ -580,6 +580,54 @@ a { text-decoration: none; color: inherit; }
   max-width: 480px;
 }
 
+/* ===================== CONTACTS PAGE ===================== */
+.contacts-page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+.contacts-page__inner { max-width: 600px; margin: 0 auto; }
+
+.contacts-page__title {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 900;
+  color: #1a1a2e;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contacts-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 36px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+}
+
+.contacts-label {
+  font-weight: 700;
+  color: #1a1a2e;
+  flex-shrink: 0;
+  min-width: 60px;
+}
+
+.contacts-value {
+  color: #1a3a6b;
+  word-break: break-all;
+}
+
+.contacts-value:hover { text-decoration: underline; }
+
 /* ===================== TOAST ===================== */
 .toast {
   position: fixed;
