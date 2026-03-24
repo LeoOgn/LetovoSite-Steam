@@ -513,51 +513,71 @@ a { text-decoration: none; color: inherit; }
 
 .form-error:empty { display: none; }
 
-/* ===================== ABOUT / TEAM MODAL ===================== */
-.modal--about {
-  max-width: 500px;
-  max-height: 80vh;
-  overflow-y: auto;
-  padding: 40px 40px 32px;
+/* ===================== NAV ACTIVE ===================== */
+.nav__item--active { background: #f0f3fa; color: #1a3a6b; }
+
+/* ===================== TEAM PAGE ===================== */
+.team-page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
 }
 
-.team-list {
+.team-page__inner { max-width: 860px; margin: 0 auto; }
+
+.team-page__title {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 900;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.team-page__subtitle {
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.team-grid {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-top: 8px;
 }
 
-.team-member {
+.team-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 24px 16px;
-  background: #f4f5f7;
-  border-radius: 16px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 32px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
-.team-member__photo {
-  width: 100px;
-  height: 100px;
+.team-card__photo {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
   background: #e8ecf5;
 }
 
-.team-member__name {
-  font-size: 18px;
-  font-weight: 700;
+.team-card__name {
+  font-size: 22px;
+  font-weight: 800;
   color: #1a1a2e;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
-.team-member__desc {
-  font-size: 14px;
+.team-card__desc {
+  font-size: 15px;
   color: #888;
-  line-height: 1.5;
+  line-height: 1.6;
+  max-width: 480px;
 }
 
 /* ===================== TOAST ===================== */
