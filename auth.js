@@ -226,6 +226,7 @@ document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') {
     closeModal('registerModal');
     closeModal('loginModal');
+    closeModal('aboutModal');
   }
 });
 
@@ -249,13 +250,16 @@ document.getElementById('heroRegisterBtn').addEventListener('click', () => {
   }
 });
 
-document.getElementById('bannerRegisterBtn').addEventListener('click', () => {
-  const session = getSession();
-  if (session) {
-    showToast('Вы уже зарегистрированы!');
-  } else {
-    openModal('registerModal');
-  }
+// ===================== ABOUT MODAL =====================
+document.getElementById('openAbout').addEventListener('click', (e) => {
+  e.preventDefault();
+  openModal('aboutModal');
+});
+
+document.getElementById('closeAbout').addEventListener('click', () => closeModal('aboutModal'));
+
+document.getElementById('aboutModal').addEventListener('click', function (e) {
+  if (e.target === this) closeModal('aboutModal');
 });
 
 // ===================== PASSWORD TOGGLE =====================

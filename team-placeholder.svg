@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246 246" fill="none">
+  <rect width="246" height="246" fill="#f4f5f7" rx="16"/>
+  <!-- Hat brim -->
+  <rect x="30" y="110" width="186" height="26" rx="13" stroke="#1a1a2e" stroke-width="8" fill="none"/>
+  <!-- Hat top -->
+  <path d="M68 110 Q74 55 123 48 Q172 55 178 110" stroke="#1a1a2e" stroke-width="8" fill="none" stroke-linejoin="round"/>
+  <!-- Hat band -->
+  <line x1="68" y1="94" x2="178" y2="94" stroke="#1a1a2e" stroke-width="8"/>
+  <!-- Left glasses circle -->
+  <circle cx="85" cy="165" r="30" stroke="#1a1a2e" stroke-width="8" fill="none"/>
+  <!-- Right glasses circle -->
+  <circle cx="161" cy="165" r="30" stroke="#1a1a2e" stroke-width="8" fill="none"/>
+  <!-- Bridge -->
+  <line x1="115" y1="165" x2="131" y2="165" stroke="#1a1a2e" stroke-width="8"/>
+  <!-- Left arm -->
+  <line x1="30" y1="165" x2="55" y2="165" stroke="#1a1a2e" stroke-width="8"/>
+  <!-- Right arm -->
+  <line x1="191" y1="165" x2="216" y2="165" stroke="#1a1a2e" stroke-width="8"/>
+</svg>
