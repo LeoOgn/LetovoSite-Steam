@@ -8,6 +8,7 @@ PORT = 8000
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 handler = http.server.SimpleHTTPRequestHandler
+socketserver.TCPServer.allow_reuse_address = True
 
 with socketserver.TCPServer(("", PORT), handler) as httpd:
     print(f"Сайт запущен: http://localhost:{PORT}")
