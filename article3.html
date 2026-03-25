@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Наша команда — Летово.Образование</title>
+  <title>Тест 3 — Летово.Образование</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -25,7 +25,7 @@
       </a>
 
       <nav class="nav">
-        <div class="nav__item nav__item--dropdown nav__item--active">
+        <div class="nav__item nav__item--dropdown">
           О нас
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <div class="dropdown">
@@ -33,11 +33,11 @@
             <a href="contacts.html">Контакты</a>
           </div>
         </div>
-        <div class="nav__item nav__item--dropdown">
+        <div class="nav__item nav__item--dropdown nav__item--active">
           Статьи
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <div class="dropdown">
-            <a href="article1.html">Тест 1</a>
+            <a href="article3.html">Тест 3</a>
             <a href="article2.html">Тест 2</a>
             <a href="article3.html">Тест 3</a>
           </div>
@@ -62,33 +62,14 @@
     </div>
   </header>
 
-  <!-- TEAM PAGE -->
+  <!-- ARTICLE -->
   <main>
-    <section class="team-page">
-      <div class="team-page__inner">
-        <h1 class="team-page__title">Наша команда</h1>
-        <p class="team-page__subtitle">Люди, которые создают Летово.Образование</p>
-        <div class="team-grid">
-          <div class="team-card">
-            <img src="team-placeholder.svg" alt="Смолянинов Егор" class="team-card__photo" />
-            <h2 class="team-card__name">Смолянинов Егор</h2>
-            <p class="team-card__desc">Описание в разработке</p>
-          </div>
-          <div class="team-card">
-            <img src="team-placeholder.svg" alt="Огнев Лев" class="team-card__photo" />
-            <h2 class="team-card__name">Огнев Лев</h2>
-            <p class="team-card__desc">Описание в разработке</p>
-          </div>
-          <div class="team-card">
-            <img src="team-placeholder.svg" alt="Данилов Павел" class="team-card__photo" />
-            <h2 class="team-card__name">Данилов Павел</h2>
-            <p class="team-card__desc">Описание в разработке</p>
-          </div>
-          <div class="team-card">
-            <img src="team-placeholder.svg" alt="Шкоп Леонид" class="team-card__photo" />
-            <h2 class="team-card__name">Шкоп Леонид</h2>
-            <p class="team-card__desc">Описание в разработке</p>
-          </div>
+    <section class="article-page">
+      <div class="article-page__inner">
+        <a href="index.html" class="article-back">← Все статьи</a>
+        <h1 class="article-page__title">Тест 3</h1>
+        <div class="article-body">
+          <p>Тестовая статья номер 3</p>
         </div>
       </div>
     </section>
@@ -110,11 +91,11 @@
         </div>
       </div>
       <div class="footer__links">
-        <a href="#">О нас</a>
+        <a href="team.html">О нас</a>
         <a href="#">Курсы</a>
         <a href="#">Олимпиады</a>
         <a href="#">Новости</a>
-        <a href="#">Контакты</a>
+        <a href="contacts.html">Контакты</a>
       </div>
       <p class="footer__copy">© 2024 Летово.Образование. Все права защищены.</p>
     </div>
@@ -196,14 +177,10 @@
     </div>
   </div>
 
-  <!-- SUCCESS TOAST -->
   <div class="toast" id="toast"></div>
-
-  <!-- CHAT BUTTON -->
   <button class="chat-btn">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
   </button>
-
   <script src="auth.js"></script>
 </body>
 </html>

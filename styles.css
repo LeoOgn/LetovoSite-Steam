@@ -580,6 +580,42 @@ a { text-decoration: none; color: inherit; }
   max-width: 480px;
 }
 
+/* ===================== ARTICLE PAGE ===================== */
+.article-page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+.article-page__inner { max-width: 720px; margin: 0 auto; }
+
+.article-back {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: #1a3a6b;
+  font-weight: 600;
+}
+
+.article-back:hover { text-decoration: underline; }
+
+.article-page__title {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 900;
+  color: #1a1a2e;
+  margin-bottom: 32px;
+}
+
+.article-body {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 36px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+}
+
 /* ===================== CONTACTS PAGE ===================== */
 .contacts-page {
   max-width: 1280px;
