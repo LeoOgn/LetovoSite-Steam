@@ -616,6 +616,230 @@ a { text-decoration: none; color: inherit; }
   line-height: 1.8;
 }
 
+/* ===================== О ЛЕТОВО PAGE ===================== */
+.oletovo-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.oletovo-sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 80px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.oletovo-sidebar__label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #aaa;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.oletovo-sidenav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.oletovo-sidenav__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border-left: 3px solid transparent;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.oletovo-sidenav__item:hover { background: #f0f3fa; }
+
+.oletovo-sidenav__item--active {
+  border-left-color: #1a3a6b;
+  background: #f0f3fa;
+}
+
+.oletovo-sidenav__num {
+  font-size: 12px;
+  font-weight: 700;
+  color: #aaa;
+  padding-top: 1px;
+  flex-shrink: 0;
+}
+
+.oletovo-sidenav__item--active .oletovo-sidenav__num { color: #1a3a6b; }
+
+.oletovo-sidenav__text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.oletovo-sidenav__item--active .oletovo-sidenav__text { color: #1a3a6b; }
+
+.oletovo-content { flex: 1; min-width: 0; }
+
+.oletovo-section {
+  margin-bottom: 80px;
+  scroll-margin-top: 80px;
+}
+
+.oletovo-section__title {
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 28px;
+}
+
+.oletovo-section__text {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.oletovo-photo-placeholder {
+  width: 100%;
+  height: 360px;
+  background: #e8ecf5;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  color: #aaa;
+  font-size: 15px;
+}
+
+.oletovo-photo-placeholder--small {
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+}
+
+.oletovo-blockquote {
+  border-left: 4px solid #2a5cbf;
+  padding-left: 20px;
+  margin: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.oletovo-blockquote p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Accordion */
+.oletovo-accordions { display: flex; flex-direction: column; gap: 2px; }
+
+.oletovo-accordion { background: #f4f5f7; border-radius: 12px; overflow: hidden; }
+
+.oletovo-accordion__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a2e;
+  cursor: pointer;
+  text-align: left;
+}
+
+.oletovo-accordion__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f0b429;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.25s;
+  line-height: 1;
+}
+
+.oletovo-accordion.open .oletovo-accordion__icon { transform: rotate(180deg); }
+
+.oletovo-accordion__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 24px;
+}
+
+.oletovo-accordion.open .oletovo-accordion__body {
+  max-height: 300px;
+  padding: 0 24px 20px;
+}
+
+.oletovo-accordion__body p { font-size: 15px; color: #555; line-height: 1.7; }
+
+/* Values row */
+.oletovo-section__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.oletovo-section__col { flex: 1; }
+
+/* List */
+.oletovo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0;
+}
+
+.oletovo-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 17px;
+  color: #1a1a2e;
+}
+
+.oletovo-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2a5cbf;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .oletovo-layout { flex-direction: column; }
+  .oletovo-sidebar { width: 100%; position: static; }
+  .oletovo-section__row { flex-direction: column; }
+  .oletovo-photo-placeholder--small { width: 100%; height: 200px; }
+}
+
 /* ===================== CONTACTS PAGE ===================== */
 .contacts-page {
   max-width: 1280px;
