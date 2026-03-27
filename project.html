@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Тест 3 — Летово.Образование</title>
+  <title>Наш проект — Летово.Образование</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -33,16 +33,16 @@
             <a href="contacts.html">Контакты</a>
           </div>
         </div>
-        <div class="nav__item nav__item--dropdown nav__item--active">
+        <div class="nav__item nav__item--dropdown">
           Статьи
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <div class="dropdown">
-            <a href="article3.html">Тест 3</a>
+            <a href="article1.html">Тест 1</a>
             <a href="article2.html">Тест 2</a>
             <a href="article3.html">Тест 3</a>
           </div>
         </div>
-        <a href="project.html" class="nav__item">Наш проект</a>
+        <a href="project.html" class="nav__item nav__item--active">Наш проект</a>
         <a href="about-letovo.html" class="nav__item">О Летово</a>
         <a href="index.html" class="nav__item">Полезные материалы</a>
       </nav>
@@ -62,14 +62,21 @@
     </div>
   </header>
 
-  <!-- ARTICLE -->
+  <!-- PROJECT PAGE -->
   <main>
-    <section class="article-page">
-      <div class="article-page__inner">
-        <a href="index.html" class="article-back">← Все статьи</a>
-        <h1 class="article-page__title">Тест 3</h1>
-        <div class="article-body">
-          <p>Тестовая статья номер 3</p>
+    <section class="project-page">
+      <div class="project-page__inner">
+        <h1 class="project-page__title">Наш проект</h1>
+        <div class="project-card">
+          <p class="project-text">
+            Школа обладает уникальной образовательной моделью, способствующей развитию учащихся.
+            К сожалению, далеко не все ученики, абитуриенты, родители знакомы с этой моделью.
+            Перед нами стоит цель рассказать, просто и понятно, что из себя представляет
+            образовательная модель школы Летово.
+          </p>
+          <div class="project-image-placeholder">
+            <span>Изображение появится позже</span>
+          </div>
         </div>
       </div>
     </section>
