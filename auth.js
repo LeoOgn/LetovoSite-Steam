@@ -261,5 +261,16 @@ document.querySelectorAll('.toggle-password').forEach(btn => {
   });
 });
 
+// ===================== NAV LINKS =====================
+document.querySelectorAll('a.nav__item').forEach(function(link) {
+  var href = link.getAttribute('href');
+  if (href && href !== '#') {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.href = href;
+    });
+  }
+});
+
 // ===================== INIT =====================
 updateAuthUI();
