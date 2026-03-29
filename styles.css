@@ -840,6 +840,17 @@ a { text-decoration: none; color: inherit; }
   .oletovo-photo-placeholder--small { width: 100%; height: 200px; }
 }
 
+.oletovo-list--detailed { gap: 20px; }
+
+.oletovo-list--detailed li {
+  align-items: flex-start;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.oletovo-list--detailed li::before { margin-top: 8px; }
+
 /* ===================== PROJECT PAGE ===================== */
 .project-page {
   max-width: 1280px;
