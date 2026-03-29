@@ -19,7 +19,14 @@ try:
 except Exception:
     pass
 
-handler = http.server.SimpleHTTPRequestHandler
+class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
+    def end_headers(self):
+        self.send_header('Cache-Control', 'no-cache, no-store, must-revalidate')
+        self.send_header('Pragma', 'no-cache')
+        self.send_header('Expires', '0')
+        super().end_headers()
+
+handler = NoCacheHandler
 socketserver.TCPServer.allow_reuse_address = True
 
 with socketserver.TCPServer(("", PORT), handler) as httpd:
