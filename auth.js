@@ -200,24 +200,31 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
 });
 
 // ===================== LOGOUT =====================
-document.getElementById('logoutBtn').addEventListener('click', function () {
+const logoutBtn = document.getElementById('logoutBtn');
+if (logoutBtn) logoutBtn.addEventListener('click', function () {
   clearSession();
   updateAuthUI();
   showToast('Вы вышли из аккаунта');
 });
 
 // ===================== OPEN/CLOSE MODALS =====================
-document.getElementById('openRegister').addEventListener('click', () => openModal('registerModal'));
-document.getElementById('openLogin').addEventListener('click', () => openModal('loginModal'));
+const openRegisterBtn = document.getElementById('openRegister');
+if (openRegisterBtn) openRegisterBtn.addEventListener('click', () => openModal('registerModal'));
+const openLoginBtn = document.getElementById('openLogin');
+if (openLoginBtn) openLoginBtn.addEventListener('click', () => openModal('loginModal'));
 
-document.getElementById('closeRegister').addEventListener('click', () => closeModal('registerModal'));
-document.getElementById('closeLogin').addEventListener('click', () => closeModal('loginModal'));
+const closeRegisterBtn = document.getElementById('closeRegister');
+if (closeRegisterBtn) closeRegisterBtn.addEventListener('click', () => closeModal('registerModal'));
+const closeLoginBtn = document.getElementById('closeLogin');
+if (closeLoginBtn) closeLoginBtn.addEventListener('click', () => closeModal('loginModal'));
 
 // Close on overlay click
-document.getElementById('registerModal').addEventListener('click', function (e) {
+const registerModalEl = document.getElementById('registerModal');
+if (registerModalEl) registerModalEl.addEventListener('click', function (e) {
   if (e.target === this) closeModal('registerModal');
 });
-document.getElementById('loginModal').addEventListener('click', function (e) {
+const loginModalEl = document.getElementById('loginModal');
+if (loginModalEl) loginModalEl.addEventListener('click', function (e) {
   if (e.target === this) closeModal('loginModal');
 });
 
@@ -230,11 +237,13 @@ document.addEventListener('keydown', function (e) {
 });
 
 // Switch between modals
-document.getElementById('switchToLogin').addEventListener('click', () => {
+const switchToLoginBtn = document.getElementById('switchToLogin');
+if (switchToLoginBtn) switchToLoginBtn.addEventListener('click', () => {
   closeModal('registerModal');
   openModal('loginModal');
 });
-document.getElementById('switchToRegister').addEventListener('click', () => {
+const switchToRegisterBtn = document.getElementById('switchToRegister');
+if (switchToRegisterBtn) switchToRegisterBtn.addEventListener('click', () => {
   closeModal('loginModal');
   openModal('registerModal');
 });
