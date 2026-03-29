@@ -240,14 +240,17 @@ document.getElementById('switchToRegister').addEventListener('click', () => {
 });
 
 // Hero & banner buttons
-document.getElementById('heroRegisterBtn').addEventListener('click', () => {
-  const session = getSession();
-  if (session) {
-    showToast('Вы уже авторизованы!');
-  } else {
-    openModal('registerModal');
-  }
-});
+const heroRegisterBtn = document.getElementById('heroRegisterBtn');
+if (heroRegisterBtn) {
+  heroRegisterBtn.addEventListener('click', () => {
+    const session = getSession();
+    if (session) {
+      showToast('Вы уже авторизованы!');
+    } else {
+      openModal('registerModal');
+    }
+  });
+}
 
 // ===================== PASSWORD TOGGLE =====================
 document.querySelectorAll('.toggle-password').forEach(btn => {
