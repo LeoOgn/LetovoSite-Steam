@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Глоссарий — Летово.Образование</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .glossary-page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .glossary-page__title {
+      font-size: 32px;
+      font-weight: 800;
+      color: #1a3a6b;
+      margin-bottom: 40px;
+      letter-spacing: 0.04em;
+    }
+    .glossary-letter {
+      margin-bottom: 36px;
+    }
+    .glossary-letter__heading {
+      font-size: 22px;
+      font-weight: 800;
+      color: #1a3a6b;
+      border-bottom: 2px solid #e8edf5;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+    .glossary-term {
+      margin-bottom: 14px;
+    }
+    .glossary-term__name {
+      font-weight: 700;
+      color: #1a3a6b;
+      font-size: 15px;
+    }
+    .glossary-term__def {
+      color: #444;
+      font-size: 14.5px;
+      line-height: 1.6;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <svg class="logo__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4L36 13V27L20 36L4 27V13L20 4Z" stroke="#1a3a6b" stroke-width="2.5" fill="none"/>
+          <path d="M20 4L20 36" stroke="#1a3a6b" stroke-width="2"/>
+          <path d="M4 13L36 27" stroke="#1a3a6b" stroke-width="2"/>
+          <path d="M36 13L4 27" stroke="#1a3a6b" stroke-width="2"/>
+        </svg>
+        <div class="logo__text">
+          <span class="logo__name">ЛЕТОВО</span>
+          <span class="logo__sub">Образование</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <div class="nav__item nav__item--dropdown">
+          О нас
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="dropdown">
+            <a href="team.html">Наша команда</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+        <div class="nav__item nav__item--dropdown nav__item--active">
+          Статьи
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="dropdown">
+            <a href="article1.html">Тест 1</a>
+            <a href="article2.html">Тест 2</a>
+            <a href="article3.html">Тест 3</a>
+            <a href="glossary.html">Глоссарий</a>
+          </div>
+        </div>
+        <a href="project.html" class="nav__item">Наш проект</a>
+        <a href="about-letovo.html" class="nav__item">О Летово</a>
+        <a href="materials.html" class="nav__item">Полезные материалы</a>
+      </nav>
+
+      <div class="header__auth" id="authButtons">
+        <button class="btn btn--outline" id="openRegister">РЕГИСТРАЦИЯ</button>
+        <button class="btn btn--outline" id="openLogin">ВОЙТИ</button>
+      </div>
+
+      <div class="header__user" id="userMenu" style="display:none">
+        <div class="user-avatar" id="userAvatar"></div>
+        <div class="user-dropdown">
+          <span id="userName"></span>
+          <button class="btn-link" id="logoutBtn">Выйти</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- GLOSSARY -->
+  <main>
+    <div class="glossary-page">
+      <h1 class="glossary-page__title">ГЛОССАРИЙ</h1>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">А</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Автономия (в контексте ученика)</div>
+          <div class="glossary-term__def">Способность и право ученика самостоятельно управлять своим образованием, выбирать темп, формы отчетности и содержание обучения, а также уровень ответственности за результат.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Автономный ученик</div>
+          <div class="glossary-term__def">Центральная фигура образовательной модели, обладающая сформированной субъектностью, способностью к саморегуляции и самореализации.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Агентность</div>
+          <div class="glossary-term__def">Способность ученика выступать активным агентом (действующим лицом) собственного образования, а не пассивным исполнителем.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Адаптационный статут (Начальный)</div>
+          <div class="glossary-term__def">Статус, присваиваемый ученикам, обучающимся менее 6 месяцев, когда школа накапливает данные об их готовности к автономному учению.</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">Б</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Бизнес-процессы</div>
+          <div class="glossary-term__def">Четко выстроенные управленческие процедуры (например, процесс поступления), обеспечивающие реализацию образовательной модели.</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">Д</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Дашборд (дешборд) наставника</div>
+          <div class="glossary-term__def">Цифровой инструмент, позволяющий наставнику видеть целостную картину состояния ученика (академические результаты, нагрузка, задолженности, благополучие и т.д.).</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Диплом Летово</div>
+          <div class="glossary-term__def">Внутренний школьный стандарт, отслеживание прогресса выполнения критериев которого входит в список объектов мониторинга, выполняемых учеником.</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">З</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">ЗБР (Зона ближайшего развития)</div>
+          <div class="glossary-term__def">Центральный механизм реализации модели; разрыв между уровнем актуального развития ребенка и его потенциальным уровнем, который он может достичь под руководством взрослого или в сотрудничестве со сверстниками.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">«Зеленая зона» / «Красная зона»</div>
+          <div class="glossary-term__def">Условные зоны мониторинга, определяющие соответствие ученика критериям статута для перехода или возврата на предыдущий уровень.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">«ЗУН-корка»</div>
+          <div class="glossary-term__def">Структурирование знаний, умений и навыков (ЗУН) по линейному, циклическому или концентрическому принципу; основа планирования развития.</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">И</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Идентичности (позиция)</div>
+          <div class="glossary-term__def">Один из вызовов школы, связанный с формированием личностной позиции ученика через осознание себя в разных ролях и контекстах.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Индикаторы готовности</div>
+          <div class="glossary-term__def">Объективные показатели (12 индикаторов в прототипе), используемые для оценки сформированности компонентов готовности к автономному учению (академическая успеваемость, посещаемость, самооценка и др.).</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Инкультурация</div>
+          <div class="glossary-term__def">Процесс погружения ученика в контекст культуры, освоение ее норм, условий и ценностей.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">ИУП (Индивидуальный учебный план)</div>
+          <div class="glossary-term__def">Инструмент, позволяющий ученику управлять своей образовательной траекторией, выбирая предметы, темп и формы обучения.</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">К</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Классно-урочная система</div>
+          <div class="glossary-term__def">Традиционная замкнутая система организации обучения, от которой модель движется к более сложным форматам (сетевое образование, учение).</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Когнитивное развитие</div>
+          <div class="glossary-term__def">Развитие интеллекта, гибкости мышления, критического анализа и мыслительных способностей.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Компетенции</div>
+          <div class="glossary-term__def">Интеграция когнитивных и социальных навыков, позволяющая достигать результата в конкретной деятельности.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Конструктор прямого действия</div>
+          <div class="glossary-term__def">Набор готовых решений и инструментов для учителей и учеников в структуре модели.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">«Коридор возможностей»</div>
+          <div class="glossary-term__def">Набор прав и ресурсов, доступных ученику в соответствии с его статутом (от А до D).</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">М</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Макроуровень</div>
+          <div class="glossary-term__def">Уровень образовательного сообщества, где учебное сообщество воздействует примерами мотивации.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Метапредметные навыки (soft skills)</div>
+          <div class="glossary-term__def">Навыки, включающие гибкость мышления, коммуникацию, работу в команде, саморегуляцию; оцениваются в дашборде наставника.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Микроуровень</div>
+          <div class="glossary-term__def">Уровень конкретных взаимодействий (ученик-учитель, ученик-ученик) в образовательном процессе.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Мотивационно-смысловое поле</div>
+          <div class="glossary-term__def">Уникальная система присвоенных учеником ценностей и смыслов, которая направляет его поведение и обучение.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Модель (образовательная)</div>
+          <div class="glossary-term__def">Целостная система организации учебного процесса, включающая принципы, взаимосвязи теорий и практик, направленная на развитие ученика.</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">Н</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Наставник</div>
+          <div class="glossary-term__def">Ключевая фигура, сопровождающая ученика и использующая дашборд для целостного анализа его состояния и поддержки.</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">П</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Позиция пользователя (ученика)</div>
+          <div class="glossary-term__def">Возможность выбора, управления собой и условиями, формирования собственной образовательной среды.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Позиция профессионала (педагога)</div>
+          <div class="glossary-term__def">Анализ лучших практик, участие в исследованиях, запрос на дифференциацию с учетом субъектности ученика.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Пороговая модель</div>
+          <div class="glossary-term__def">Методология определения статута, при которой готовность к переходу определяется при соответствии должного количества обязательных критериев.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Пресеты</div>
+          <div class="glossary-term__def">Предустановленные настройки программы по направлениям и уровням в традиционном укладе.</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">Р</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Репорт</div>
+          <div class="glossary-term__def">Инструмент, позволяющий вкратце резюмировать и рефлексировать о ком-то или о чем-то.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Ремесленная технологичность</div>
+          <div class="glossary-term__def">Подход, опирающийся на традиции и шаблоны, передаваемые «из рук в руки».</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">С</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Сетевое образование</div>
+          <div class="glossary-term__def">Формат образования, строящийся на продуктовых, творческих и социально-личностных мотивах, где результат — не только внешний продукт, но и самопознание.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Скоринг</div>
+          <div class="glossary-term__def">Оценка финансового положения семьи; процедура для анализа цены обучения.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Смешанная технологичность</div>
+          <div class="glossary-term__def">Баланс научного подхода и практического опыта, употребляемый в модели.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Социализация</div>
+          <div class="glossary-term__def">Формирование способности действовать в обществе через освоение принятых примеров поведения и норм жизни.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Статуты</div>
+          <div class="glossary-term__def">Уровни готовности ученика к автономному учению, определяющие его права, возможности и ресурсы (от недостаточного уровня до полной автономности).</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Субъектность</div>
+          <div class="glossary-term__def">Авторская позиция ученика, способность быть инициатором, чейнджером и автором собственного обучения.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Сценирование</div>
+          <div class="glossary-term__def">Главный инструмент воплощения модели. Проектирование всех элементов жизни школы.</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">Т</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Технологичность (образования)</div>
+          <div class="glossary-term__def">Подходы к организации образовательного процесса, определяющие методы и способы воспроизводимости результатов.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Типология (контента)</div>
+          <div class="glossary-term__def">Классификация материалов по целям использования, типам пользователей и способам употребления.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Трек</div>
+          <div class="glossary-term__def">Формализованное представление и реализация спланированного пути ученика; средство мониторинга достигаемого и направления.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Тьюторское сопровождение</div>
+          <div class="glossary-term__def">Система личностной поддержки ученика в процессах его образования.</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">Ф</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Фасилитатор</div>
+          <div class="glossary-term__def">Новая роль учителя как наставника, облегчающего процесс обучения и создающего условия для самостоятельной работы учеников.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Фундаментальные среды</div>
+          <div class="glossary-term__def">Базовые условия, необходимые для ученика.</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">Ч</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Чек-лист</div>
+          <div class="glossary-term__def">Инструмент для экспертного заключения, требуемый для заполнения информации.</div>
+        </div>
+      </div>
+
+      <div class="glossary-letter">
+        <div class="glossary-letter__heading">Э</div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Экстенсивность / Интенсивность</div>
+          <div class="glossary-term__def">Два пути развития: экстенсивный (увеличение количества часов) и интенсивный (качественная организация и эффективность), из которых модель выбирает интенсивный.</div>
+        </div>
+        <div class="glossary-term">
+          <div class="glossary-term__name">Элитные проекты</div>
+          <div class="glossary-term__def">Расширенные возможности (наравне со спецкурсами и стажировками), доступные через демонстрацию ответственности.</div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <svg class="logo__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4L36 13V27L20 36L4 27V13L20 4Z" stroke="white" stroke-width="2.5" fill="none"/>
+          <path d="M20 4L20 36" stroke="white" stroke-width="2"/>
+          <path d="M4 13L36 27" stroke="white" stroke-width="2"/>
+          <path d="M36 13L4 27" stroke="white" stroke-width="2"/>
+        </svg>
+        <div class="logo__text">
+          <span style="color:white;font-weight:700;">ЛЕТОВО</span>
+          <span style="color:rgba(255,255,255,0.7);font-size:12px;">Образование</span>
+        </div>
+      </div>
+      <div class="footer__links">
+        <a href="team.html">О нас</a>
+        <a href="#">Курсы</a>
+        <a href="#">Олимпиады</a>
+        <a href="#">Новости</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+      <p class="footer__copy">© 2024 Летово.Образование. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- REGISTER MODAL -->
+  <div class="modal-overlay" id="registerModal">
+    <div class="modal">
+      <button class="modal__close" id="closeRegister">&times;</button>
+      <h2 class="modal__title">Регистрация</h2>
+      <p class="modal__subtitle">Создайте аккаунт для доступа к платформе</p>
+      <form id="registerForm" novalidate>
+        <div class="form-group">
+          <label for="regName">Имя и фамилия</label>
+          <input type="text" id="regName" placeholder="Иван Иванов" autocomplete="name" />
+          <span class="field-error" id="regNameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="regEmail">Email</label>
+          <input type="email" id="regEmail" placeholder="example@mail.ru" autocomplete="email" />
+          <span class="field-error" id="regEmailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="regPassword">Пароль</label>
+          <div class="input-wrapper">
+            <input type="password" id="regPassword" placeholder="Не менее 6 символов" autocomplete="new-password" />
+            <button type="button" class="toggle-password" data-target="regPassword">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+          <span class="field-error" id="regPasswordError"></span>
+        </div>
+        <div class="form-group">
+          <label for="regClass">Класс</label>
+          <select id="regClass">
+            <option value="">Выберите класс</option>
+            <option value="3">3 класс</option>
+            <option value="4">4 класс</option>
+            <option value="5">5 класс</option>
+            <option value="6">6 класс</option>
+            <option value="7">7 класс</option>
+            <option value="8">8 класс</option>
+          </select>
+          <span class="field-error" id="regClassError"></span>
+        </div>
+        <span class="form-error" id="registerError"></span>
+        <button type="submit" class="btn btn--primary btn--full">Зарегистрироваться</button>
+      </form>
+      <p class="modal__switch">Уже есть аккаунт? <button class="btn-link" id="switchToLogin">Войти</button></p>
+    </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal">
+      <button class="modal__close" id="closeLogin">&times;</button>
+      <h2 class="modal__title">Вход</h2>
+      <p class="modal__subtitle">Добро пожаловать обратно!</p>
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" placeholder="example@mail.ru" autocomplete="email" />
+          <span class="field-error" id="loginEmailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Пароль</label>
+          <div class="input-wrapper">
+            <input type="password" id="loginPassword" placeholder="Введите пароль" autocomplete="current-password" />
+            <button type="button" class="toggle-password" data-target="loginPassword">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+          <span class="field-error" id="loginPasswordError"></span>
+        </div>
+        <span class="form-error" id="loginError"></span>
+        <button type="submit" class="btn btn--primary btn--full">Войти</button>
+      </form>
+      <p class="modal__switch">Нет аккаунта? <button class="btn-link" id="switchToRegister">Зарегистрироваться</button></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <button class="chat-btn">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </button>
+  <script src="auth.js"></script>
+</body>
+</html>
