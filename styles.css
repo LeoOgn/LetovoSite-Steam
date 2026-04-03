@@ -1012,9 +1012,13 @@ a { text-decoration: none; color: inherit; }
 
 /* ===================== SCHOOL PHOTO SECTION ===================== */
 .school-photo-section {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 48px 24px 64px;
   background: #f8f9fa;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .school-photo-main {
@@ -1024,8 +1028,6 @@ a { text-decoration: none; color: inherit; }
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-  display: block;
-  margin: 0 auto;
 }
 
 .school-photo-caption {
