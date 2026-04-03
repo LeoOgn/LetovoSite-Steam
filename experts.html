@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Летово.Образование</title>
+  <title>Наши эксперты — Летово.Образование</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,7 +11,7 @@
   <!-- HEADER -->
   <header class="header">
     <div class="header__inner">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <img src="letovo-logo.png" alt="Летово" class="logo__icon" />
         <div class="logo__text">
           <span class="logo__name">ЛЕТОВО</span>
@@ -20,7 +20,7 @@
       </a>
 
       <nav class="nav">
-        <div class="nav__item nav__item--dropdown">
+        <div class="nav__item nav__item--dropdown nav__item--active">
           О нас
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <div class="dropdown">
@@ -59,21 +59,42 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- TEAM PAGE -->
   <main>
-    <section class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title">Летово.Образование</h1>
-        <p class="hero__subtitle">Бесплатная образовательная<br>платформа для учеников 1–11 классов</p>
-      </div>
-      <div class="hero__cta">
-        <p>👋 Начни обучение вместе с нами уже сейчас!</p>
-        <button class="btn btn--primary" id="heroRegisterBtn">Зарегистрироваться</button>
+    <section class="team-page">
+      <div class="team-page__inner">
+        <h1 class="team-page__title">Наши эксперты</h1>
+        <p class="team-page__subtitle">Люди, которые помогли нам в создании проекта</p>
+        <div class="team-grid">
+          <div class="team-card">
+            <img src="team-placeholder.svg" alt="Мокринский Михаил Геннадьевич" class="team-card__photo" />
+            <h2 class="team-card__name">Мокринский Михаил Геннадьевич</h2>
+            <p class="team-card__role">Директор школы «Летово»</p>
+            <p class="team-card__desc">Михаил Геннадьевич помогал нам посредством проведения встреч, на которых ясно укладывал информацию про основы образовательной модели.</p>
+          </div>
+          <div class="team-card">
+            <img src="team-placeholder.svg" alt="Томашпольская Ирина Эдуардовна" class="team-card__photo" />
+            <h2 class="team-card__name">Томашпольская Ирина Эдуардовна</h2>
+            <p class="team-card__role">Руководитель научно-методического отдела школы</p>
+            <p class="team-card__desc">Ирина Эдуардовна неоднократно предоставляла полезные ознакомительные материалы и справочную информацию, находящуюся в нашем продукте.</p>
+          </div>
+          <div class="team-card">
+            <img src="team-placeholder.svg" alt="Котин Павел Александрович" class="team-card__photo" />
+            <h2 class="team-card__name">Котин Павел Александрович</h2>
+            <p class="team-card__role">Заведующий лабораторией, преподаватель STEAM-деятельности</p>
+            <p class="team-card__desc">Павел Александрович и Антон Дмитриевич ознакомили нас со всей важной информацией про создание проекта и объясняли нам наши удачные и не только стороны в работах.</p>
+          </div>
+          <div class="team-card">
+            <img src="team-placeholder.svg" alt="Мяков Антон Дмитриевич" class="team-card__photo" />
+            <h2 class="team-card__name">Мяков Антон Дмитриевич</h2>
+            <p class="team-card__role">Учитель физической культуры, преподаватель STEAM-деятельности</p>
+            <p class="team-card__desc">Павел Александрович и Антон Дмитриевич ознакомили нас со всей важной информацией про создание проекта и объясняли нам наши удачные и не только стороны в работах.</p>
+          </div>
+        </div>
       </div>
     </section>
-
-
   </main>
+
 
   <!-- REGISTER MODAL -->
   <div class="modal-overlay" id="registerModal">
