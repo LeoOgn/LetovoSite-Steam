@@ -1009,3 +1009,31 @@ a { text-decoration: none; color: inherit; }
   .banner__inner { flex-direction: column; }
   .modal { padding: 32px 24px 24px; }
 }
+
+/* ===================== SCHOOL PHOTO SECTION ===================== */
+.school-photo-section {
+  text-align: center;
+  padding: 48px 24px 64px;
+  background: #f8f9fa;
+}
+
+.school-photo-main {
+  width: 100%;
+  max-width: 960px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  display: block;
+  margin: 0 auto;
+}
+
+.school-photo-caption {
+  margin-top: 16px;
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .school-photo-main { height: 240px; }
+}
