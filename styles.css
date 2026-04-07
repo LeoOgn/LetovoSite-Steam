@@ -1496,3 +1496,12 @@ html[data-theme="dark"] .hamburger-btn:hover { background: #1e2240; }
   .article-body { padding: 18px 14px; }
   .modal { padding: 28px 16px 20px; }
 }
+
+/* Hide mobile menu on desktop unconditionally */
+@media (min-width: 769px) {
+  .mobile-menu,
+  .mobile-menu__backdrop,
+  .hamburger-btn {
+    display: none !important;
+  }
+}
