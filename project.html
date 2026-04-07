@@ -14,6 +14,11 @@
   <!-- HEADER -->
   <header class="header">
     <div class="header__inner">
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Открыть меню">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
       <a href="index.html" class="logo">
         <img src="letovo-logo.png" alt="Летово" class="logo__icon" />
         <div class="logo__text">
@@ -83,6 +88,43 @@
   </main>
 
 
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu__backdrop" id="mobileBackdrop"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__header">
+      <span class="mobile-menu__title">Меню</span>
+      <button class="mobile-menu__close" id="mobileMenuClose">✕</button>
+    </div>
+    <nav class="mobile-nav">
+      <div class="mobile-nav__item">
+        <button class="mobile-nav__btn" data-sub="mobileSubOnas">
+          О нас
+          <svg class="mobile-nav__arrow" width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mobile-nav__sub" id="mobileSubOnas">
+          <a href="team.html" class="mobile-nav__sub-link">Наша команда</a>
+          <a href="experts.html" class="mobile-nav__sub-link">Наши эксперты</a>
+          <a href="contacts.html" class="mobile-nav__sub-link">Контакты</a>
+        </div>
+      </div>
+      <div class="mobile-nav__item">
+        <button class="mobile-nav__btn" data-sub="mobileSubArticles">
+          Статьи
+          <svg class="mobile-nav__arrow" width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mobile-nav__sub" id="mobileSubArticles">
+          <a href="article1.html" class="mobile-nav__sub-link">Три уклада школы</a>
+          <a href="article2.html" class="mobile-nav__sub-link">Конструктор образования</a>
+          <a href="article3.html" class="mobile-nav__sub-link">Гуманизм на практике</a>
+          <a href="glossary.html" class="mobile-nav__sub-link">Глоссарий</a>
+        </div>
+      </div>
+      <a href="project.html" class="mobile-nav__link">Наш проект</a>
+      <a href="about-letovo.html" class="mobile-nav__link">О Летово</a>
+      <a href="materials.html" class="mobile-nav__link">Полезные материалы</a>
+    </nav>
+  </div>
 
   <!-- SETTINGS BUTTON -->
   <div class="settings-wrap">
@@ -183,5 +225,6 @@
 
   <script src="auth.js"></script>
   <script src="theme.js"></script>
+  <script src="mobile-menu.js"></script>
 </body>
 </html>

@@ -1256,3 +1256,243 @@ html[data-theme="dark"] .settings-popup {
 html[data-theme="dark"] .theme-option { color: #c8cce0; }
 html[data-theme="dark"] .theme-option:hover { background: #262a50; }
 html[data-theme="dark"] .theme-option--active { background: #1a2e5a; color: #7da8e8; }
+
+/* ===================== HAMBURGER BUTTON ===================== */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: background 0.15s;
+  order: -1;
+}
+
+.hamburger-btn:hover { background: #f0f3fa; }
+
+.hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #1a1a2e;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-btn--open .hamburger-line:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger-btn--open .hamburger-line:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger-btn--open .hamburger-line:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ===================== MOBILE MENU ===================== */
+.mobile-menu__backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 300;
+}
+.mobile-menu__backdrop--visible { display: block; }
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80%;
+  max-width: 320px;
+  background: #fff;
+  z-index: 400;
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu--open { transform: translateX(0); }
+
+.mobile-menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid #eef0f5;
+  flex-shrink: 0;
+}
+
+.mobile-menu__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.mobile-menu__close {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #999;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.15s;
+}
+.mobile-menu__close:hover { background: #f0f0f0; color: #333; }
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  flex: 1;
+}
+
+.mobile-nav__link {
+  display: block;
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2d2d2d;
+  border-bottom: 1px solid #f2f3f7;
+  transition: background 0.12s;
+}
+.mobile-nav__link:hover { background: #f5f7fc; color: #1a3a6b; }
+
+.mobile-nav__item { border-bottom: 1px solid #f2f3f7; }
+
+.mobile-nav__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2d2d2d;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.12s;
+}
+.mobile-nav__btn:hover { background: #f5f7fc; color: #1a3a6b; }
+.mobile-nav__btn--open { color: #1a3a6b; background: #f0f3fa; }
+
+.mobile-nav__arrow {
+  transition: transform 0.25s;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+.mobile-nav__btn--open .mobile-nav__arrow { transform: rotate(180deg); opacity: 1; }
+
+.mobile-nav__sub {
+  display: none;
+  flex-direction: column;
+  background: #f8f9fc;
+}
+.mobile-nav__sub--open { display: flex; }
+
+.mobile-nav__sub-link {
+  display: block;
+  padding: 12px 20px 12px 32px;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 1px solid #eef0f6;
+  transition: background 0.12s, color 0.12s;
+}
+.mobile-nav__sub-link:hover { background: #eef2ff; color: #1a3a6b; }
+
+/* Auth in mobile menu */
+.mobile-nav__auth {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+  border-top: 1px solid #eef0f5;
+}
+
+/* Dark theme for mobile menu */
+html[data-theme="dark"] .mobile-menu { background: #1a1d30; }
+html[data-theme="dark"] .mobile-menu__header { border-bottom-color: #252840; }
+html[data-theme="dark"] .mobile-menu__title { color: #e2e4f0; }
+html[data-theme="dark"] .mobile-menu__close { color: #7a7d94; }
+html[data-theme="dark"] .mobile-menu__close:hover { background: #252840; color: #e2e4f0; }
+html[data-theme="dark"] .mobile-nav__link { color: #c8cce0; border-bottom-color: #252840; }
+html[data-theme="dark"] .mobile-nav__link:hover { background: #222540; color: #7da8e8; }
+html[data-theme="dark"] .mobile-nav__item { border-bottom-color: #252840; }
+html[data-theme="dark"] .mobile-nav__btn { color: #c8cce0; }
+html[data-theme="dark"] .mobile-nav__btn:hover { background: #222540; color: #7da8e8; }
+html[data-theme="dark"] .mobile-nav__btn--open { background: #1e2240; color: #7da8e8; }
+html[data-theme="dark"] .mobile-nav__sub { background: #14162a; }
+html[data-theme="dark"] .mobile-nav__sub-link { color: #a0a3b5; border-bottom-color: #1e2035; }
+html[data-theme="dark"] .mobile-nav__sub-link:hover { background: #1a2e5a; color: #7da8e8; }
+html[data-theme="dark"] .hamburger-line { background: #e2e4f0; }
+html[data-theme="dark"] .hamburger-btn:hover { background: #1e2240; }
+
+/* ===================== MOBILE RESPONSIVE IMPROVEMENTS ===================== */
+@media (max-width: 768px) {
+  .hamburger-btn { display: flex; }
+
+  .header__inner { gap: 12px; }
+
+  /* Hero */
+  .hero { padding: 32px 16px 24px; gap: 24px; }
+  .hero__title { font-size: 28px; }
+  .hero__subtitle { font-size: 16px; }
+  .hero__cta { padding: 18px 20px; gap: 14px; width: 100%; }
+
+  /* School photo */
+  .school-photo-section { padding: 28px 16px 40px; }
+
+  /* Info section */
+  .info-section { padding: 40px 16px; }
+  .info-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .info-card { padding: 20px 16px; }
+
+  /* Article */
+  .article-page { padding: 32px 16px 60px; }
+  .article-body { padding: 24px 18px; font-size: 15px; }
+
+  /* Team */
+  .team-page { padding: 32px 16px 60px; }
+  .team-card { padding: 28px 20px; }
+
+  /* Project */
+  .project-page { padding: 32px 16px 60px; }
+  .project-card { padding: 28px 20px; }
+  .project-text { font-size: 16px; }
+
+  /* Contacts */
+  .contacts-page { padding: 32px 16px 60px; }
+  .contacts-card { padding: 24px 18px; }
+
+  /* O Letovo */
+  .oletovo-layout { padding: 24px 16px 60px; }
+  .oletovo-sidebar { padding: 16px; }
+
+  /* Glossary */
+  .glossary-page { padding: 32px 16px 60px; }
+
+  /* Settings btn smaller on mobile */
+  .settings-wrap { bottom: 16px; right: 16px; }
+  .settings-btn { width: 46px; height: 46px; }
+}
+
+@media (max-width: 480px) {
+  .info-grid { grid-template-columns: 1fr; }
+  .hero__title { font-size: 24px; }
+  .school-photo-main { height: 200px; }
+  .article-body { padding: 18px 14px; }
+  .modal { padding: 28px 16px 20px; }
+}
